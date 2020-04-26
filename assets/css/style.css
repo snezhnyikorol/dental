@@ -408,6 +408,7 @@ body {
 
 .sidebar.compact {
     max-width: 70px;
+    min-width: 70px;
 }
 
 .compact .sidebar__header {
