@@ -19,7 +19,9 @@
     </div>
     <div class="sidebar__body">
         <div class="sidebar__user">
-            <img src="./assets/img/sidebar/avatar.png" alt="" class="sidebar__avatar">
+            <div class="sidebar__avatar-wrapper">
+                <img src="./assets/img/sidebar/avatar.png" alt="" class="sidebar__avatar">
+            </div>
             <div class="sidebar__name-container">
                 <p class="sidebar__name">
                     Sierra Ferguson
@@ -30,40 +32,103 @@
             </div>
         </div>
         <nav class="sidebar__nav">
-            <div class="sidebar__item">
-                <img src="./assets/img/sidebar/dashboard.svg" alt="" class="sidebar__item-icon">
-                <p class="sidebar__item-text">Dashboard</p>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/dashboard.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/dashboard-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">Dashboard</a>
             </div>
-            <div class="sidebar__item">
-                <img src="./assets/img/sidebar/tasks.svg" alt="" class="sidebar__item-icon">
-                <p class="sidebar__item-text">Tasks</p>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/tasks.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/tasks-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Tasks
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item task-active">
+                            Active
+                        </li>
+                        <li class="sidebar__submenu-item task-completed">
+                            Completed
+                        </li>
+                        <li class="sidebar__submenu-item task-ended">
+                            Ended
+                        </li>
+                    </ul>
+                </a>
             </div>
-            <div class="sidebar__item">
-                <img src="./assets/img/sidebar/email.svg" alt="" class="sidebar__item-icon">
-                <p class="sidebar__item-text">Email</p>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/email.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/email-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Email
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item email-draft">
+                            Draft
+                        </li>
+                        <li class="sidebar__submenu-item email-scheduled">
+                            Scheduled
+                        </li>
+                        <li class="sidebar__submenu-item email-sent">
+                            Sent
+                        </li>
+                        <li class="sidebar__submenu-item email-archived">
+                            Archived
+                        </li>
+                    </ul>
+                </a>
             </div>
-            <div class="sidebar__item">
-                <img src="./assets/img/sidebar/contacts.svg" alt="" class="sidebar__item-icon">
-                <p class="sidebar__item-text">Contacts</p>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/contacts.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/contacts-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Contacts
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item contact-new">
+                            New
+                        </li>
+                        <li class="sidebar__submenu-item contact-top-rated">
+                            Top rated
+                        </li>
+                        <li class="sidebar__submenu-item contact-fired">
+                            Fired
+                        </li>
+                    </ul>
+                </a>
             </div>
-            <div class="sidebar__item">
-                <img src="./assets/img/sidebar/chat.svg" alt="" class="sidebar__item-icon">
-                <p class="sidebar__item-text">Chat</p>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/chat.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/chat-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">Chat</a>
             </div>
-            <div class="sidebar__item">
-                <img src="./assets/img/sidebar/deals.svg" alt="" class="sidebar__item-icon">
-                <p class="sidebar__item-text">Deals</p>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/deals.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/deals-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Deals
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item deal-low">
+                            Low
+                        </li>
+                        <li class="sidebar__submenu-item deal-high">
+                            High
+                        </li>
+                        <li class="sidebar__submenu-item deal-urgent">
+                            Urgent
+                        </li>
+                    </ul>
+                </a>
             </div>
         </nav>
     </div>
     <div class="sidebar__footer">
-        <div class="sidebar__item">
-            <img src="./assets/img/sidebar/settings.svg" alt="" class="sidebar__item-icon">
-            <p class="sidebar__item-text">Settings</p>
+        <div class="sidebar__item ">
+            <img src="./assets/icons/sidebar/settings.svg" alt="" class="sidebar__item-icon">
+            <img src="./assets/icons/sidebar/settings-active.svg" alt="" class="sidebar__item-icon-active">
+            <a class="sidebar__item-text">Settings</a>
         </div>
         <div class="sidebar__item sidebar__toggle">
-            <img src="./assets/img/sidebar/toggle.svg" alt="" class="sidebar__item-icon">
-            <p class="sidebar__item-text">Toggle sidebar</p>
+            <img src="./assets/icons/sidebar/toggle.svg" alt="" class="sidebar__item-icon">
+            <img src="./assets/icons/sidebar/toggle-active.svg" alt="" class="sidebar__item-icon-active">
+            <a class="sidebar__item-text">Toggle sidebar</a>
         </div>
     </div>
 </section>
@@ -424,6 +489,21 @@
     </main>
 </section>
 
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script>
+    $('.sidebar__item').click(function () {
+      $(this).toggleClass('active');
+    })
+
+    $('.sidebar__toggle').click(function () {
+      $('.sidebar').toggleClass('compact');
+    })
+
+    $('.sidebar__user').click(function () {
+      $(this).toggleClass('active');
+    })
+</script>
 
 </body>
 </html>
