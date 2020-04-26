@@ -154,15 +154,15 @@ body {
 }
 
 .content {
-    overflow: auto;
+    overflow-y: auto;
     height: calc(100% - 60px);
     padding: 35px;
 }
 
 .custom-checkbox {
     display: block;
-    min-height: 1.5rem;
-    padding-left: 1.5rem;
+    min-height: 14px;
+    min-width: 14px;
 }
 
 .custom-checkbox__input {
@@ -173,15 +173,14 @@ body {
     position: relative;
     margin-bottom: 0;
     vertical-align: top;
+    padding-left: 20px;
 }
 
 .custom-checkbox__label:before {
     position: absolute;
-    top: 0.25rem;
-    left: -1.5rem;
+    top: 0.15rem;
+    left: 0;
     display: block;
-    /*width: 1rem;*/
-    /*height: 1rem;*/
     width: 14px;
     height: 14px;
     box-sizing: border-box;
@@ -195,11 +194,9 @@ body {
 
 .custom-checkbox__label:after {
     position: absolute;
-    top: 0.25rem;
-    left: -1.5rem;
+    top: 0.15rem;
+    left: 0;
     display: block;
-    /*width: 1rem;*/
-    /*height: 1rem;*/
     width: 14px;
     height: 14px;
     box-sizing: border-box;
@@ -223,14 +220,19 @@ body {
 .sidebar {
     box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
     max-width: 256px;
+    min-width: 256px;
     height: 100vh;
+    overflow-y: auto;
     background-color: var(--white);
     z-index: 20;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar__header {
     padding: 0 24px;
     height: 60px;
+    min-height: 60px;
     display: flex;
     align-items: flex-end;
     border-bottom: 1px solid #EBEFF2;
@@ -243,6 +245,10 @@ body {
 .sidebar__footer {
     padding: 24px;
     border-top: 1px solid #EBEFF2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .sidebar__title {
@@ -384,9 +390,8 @@ body {
 
 
 .sidebar__toggle {
-    position: absolute;
-    bottom: 22px;
     padding: 0;
+    margin-top: 20px;
 }
 
 .sidebar__toggle .sidebar__item-text {
@@ -475,13 +480,21 @@ body {
     border-collapse: collapse;
 }
 
+.report-wrapper {
+    overflow-x: auto;
+}
+
 .report__header th {
     font-weight: 500;
     font-size: 13px;
     color: var(--dark-blue);
-    padding: 14px 24px;
+    padding: 14px 12px;
     text-align: left;
     border-bottom: 1px solid #EBEFF2;
+}
+
+.report__header th:first-child {
+    padding-left: 24px;
 }
 
 .report__header-text {
@@ -490,10 +503,11 @@ body {
 
 .report__header th:last-child {
     text-align: right;
+    padding-right: 24px;
 }
 
 .report__body td {
-    padding: 14px 24px;
+    padding: 20px 12px;
     text-align: left;
     font-size: 13px;
     font-weight: 400;
@@ -513,8 +527,13 @@ body {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.report__body td:first-child {
+    padding-left: 24px;
+}
+
 .report__body td:last-child  {
     text-align: right;
+    padding-right: 24px;
 }
 
 .report__user {

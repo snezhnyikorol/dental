@@ -140,31 +140,32 @@
     </header>
 
     <main class="content">
-        <table class="report">
-            <thead class="report__header">
-            <tr>
-                <th>
-                    <div class="custom-checkbox">
-                        <input type="checkbox" class="custom-checkbox__input" id="0">
-                        <label for="0" class="custom-checkbox__label"></label>
-                    </div>
-                </th>
-                <th><span class="report__header-text">Name</span></th>
-                <th><span class="report__header-text">Email</span></th>
-                <th><span class="report__header-text">Company name</span></th>
-                <th><span class="report__header-text">Role</span></th>
-                <th><span class="report__header-text">Forecast</span></th>
-                <th><span class="report__header-text">Recent activity</span></th>
-            </tr>
-            </thead>
-            <tbody class="report__body">
+        <div class="report-wrapper">
+            <table class="report">
+                <thead class="report__header">
+                <tr>
+                    <th>
+                        <div class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__input" id="0">
+                            <label for="0" class="custom-checkbox__label"></label>
+                        </div>
+                    </th>
+                    <th><span class="report__header-text">Name</span></th>
+                    <th><span class="report__header-text">Email</span></th>
+                    <th><span class="report__header-text">Company name</span></th>
+                    <th><span class="report__header-text">Role</span></th>
+                    <th><span class="report__header-text">Forecast</span></th>
+                    <th><span class="report__header-text">Recent activity</span></th>
+                </tr>
+                </thead>
+                <tbody class="report__body">
                 <tr>
                     <td>
                         <div class="custom-checkbox">
                             <input type="checkbox" class="custom-checkbox__input" id="1">
                             <label for="1" class="custom-checkbox__label"></label>
                         </div>
-<!--                        <input type="checkbox">-->
+                        <!--                        <input type="checkbox">-->
                     </td>
                     <td>
                         <div class="report__user">
@@ -482,10 +483,9 @@
                     <td>50 %</td>
                     <td>5 Minutes ago</td>
                 </tr>
-            </tbody>
-        </table>
-
-
+                </tbody>
+            </table>
+        </div>
     </main>
 </section>
 
