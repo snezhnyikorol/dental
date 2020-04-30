@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Dental CRM</title>
+    <style>
+        @media (max-width: 991.98px) {
+            .profile-menu-show {
+                overflow-x: hidden;
+                overflow-y: scroll; }
+            .profile-menu-show .profile-sidebar {
+                display: block; }
+            .profile-menu-show .profile-body {
+                margin-left: 20px; } }
+
+        .content-body-profile {
+            display: flex;
+            height: 100%;
+            padding: 0 15px 10px; }
+        @media (min-width: 576px) {
+            .content-body-profile {
+                padding: 0 20px 10px; } }
+        @media (min-width: 1200px) {
+            .content-body-profile {
+                padding: 0 20px 20px; } }
+
+        .profile-sidebar {
+            width: 230px;
+            padding: 25px 0 0 10px;
+            flex-shrink: 0;
+            display: none; }
+        @media (min-width: 768px) {
+            .profile-sidebar {
+                padding-left: 0; } }
+        @media (min-width: 992px) {
+            .profile-sidebar {
+                display: block; } }
+
+        .profile-sidebar-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px; }
+        .profile-sidebar-header .avatar {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 25px; }
+        .profile-sidebar-header h5 {
+            color: #06072d;
+            font-size: 21px;
+            margin-bottom: 3px; }
+        .profile-sidebar-header p {
+            color: #575d78;
+            margin-bottom: 2px; }
+        .profile-sidebar-header span {
+            display: block;
+            color: #919fac;
+            font-size: 0.8125rem; }
+
+        .profile-sidebar-body {
+            color: #373857; }
+
+        .profile-info-list li {
+            display: flex;
+            align-items: center; }
+        .profile-info-list li + li {
+            margin-top: 10px; }
+
+        .profile-info-list a {
+            color: #373857;
+            transition: all 0.25s; }
+        @media (prefers-reduced-motion: reduce) {
+            .profile-info-list a {
+                transition: none; } }
+        .profile-info-list a:hover, .profile-info-list a:focus {
+            color: #5556fd; }
+
+        .profile-info-list svg {
+            width: 14px;
+            height: 14px;
+            color: #303443;
+            margin-right: 10px; }
+
+        .profile-body {
+            width: calc(100vw - 30px);
+            background-color: #fff;
+            border: 1px solid rgba(230, 231, 239, 0.85);
+            box-shadow: 0 4px 12px 0 rgba(131, 146, 165, 0.15); }
+        @media (min-width: 992px) {
+            .profile-body {
+                flex: 1;
+                margin-left: 20px;
+                margin-top: 20px; } }
+
+        .profile-body-header {
+            width: 100%;
+            height: 60px;
+            overflow: hidden; }
+        @media (min-width: 576px) {
+            .profile-body-header {
+                height: 60px;
+                overflow: visible; } }
+        .profile-body-header .nav-wrapper {
+            width: 100%;
+            height: 80px;
+            overflow-x: auto;
+            overflow-y: hidden; }
+        @media (min-width: 576px) {
+            .profile-body-header .nav-wrapper {
+                width: auto;
+                height: auto; } }
+        .profile-body-header .nav-line {
+            min-width: 360px;
+            padding: 0 15px;
+            border-bottom-width: 1px; }
+        @media (min-width: 576px) {
+            .profile-body-header .nav-line {
+                padding: 0 20px; } }
+        .profile-body-header .nav-link {
+            padding: 20px 0 18px;
+            font-weight: 500;
+            color: #575d78;
+            white-space: nowrap; }
+        @media (min-width: 992px) {
+            .profile-body-header .nav-link {
+                padding: 20px 0; } }
+        .profile-body-header .nav-link:hover, .profile-body-header .nav-link:focus {
+            color: #373857; }
+        .profile-body-header .nav-link.active {
+            color: #5556fd; }
+        .profile-body-header .nav-link.active::after {
+            bottom: -1px;
+            background-color: #5556fd;
+            height: 1px; }
+
+        @media (max-width: 575px) {
+            .stat-profile {
+                overflow: hidden;
+                width: calc(100% + 15px);
+                height: 90px; }
+            .stat-profile .stat-profile-body {
+                overflow-x: auto;
+                height: 105px; }
+            .stat-profile .stat-profile-body .row {
+                width: 560px;
+                padding-right: 10px; } }
+
+        .media-list-profile .media {
+            padding: 15px 0;
+            border-top: 1px solid rgba(230, 231, 239, 0.85); }
+
+        .media-list-profile .media-body {
+            margin-left: 20px; }
+        .media-list-profile .media-body p:last-of-type {
+            margin-bottom: 0; }
+    </style>
+</head>
+<body>
+
+<section class="sidebar">
+    <div class="sidebar__header">
+        <h1 class="sidebar__title">
+            <span class="full">Dental CRM</span>
+            <span class="short">DC</span>
+        </h1>
+    </div>
+    <div class="sidebar__body">
+        <div class="sidebar__user">
+            <div class="sidebar__avatar-wrapper">
+                <img src="./assets/img/sidebar/avatar.png" alt="" class="sidebar__avatar">
+            </div>
+            <div class="sidebar__name-container">
+                <p class="sidebar__name">
+                    Sierra Ferguson
+                </p>
+                <p class="sidebar__email">
+                    s.ferguson@gmail.com
+                </p>
+            </div>
+        </div>
+        <nav class="sidebar__nav">
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/dashboard.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/dashboard-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">Dashboard</a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/tasks.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/tasks-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Tasks
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item task-active">
+                            Active
+                        </li>
+                        <li class="sidebar__submenu-item task-completed">
+                            Completed
+                        </li>
+                        <li class="sidebar__submenu-item task-ended">
+                            Ended
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/email.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/email-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Email
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item email-draft">
+                            Draft
+                        </li>
+                        <li class="sidebar__submenu-item email-scheduled">
+                            Scheduled
+                        </li>
+                        <li class="sidebar__submenu-item email-sent">
+                            Sent
+                        </li>
+                        <li class="sidebar__submenu-item email-archived">
+                            Archived
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/contacts.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/contacts-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Contacts
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item contact-new">
+                            New
+                        </li>
+                        <li class="sidebar__submenu-item contact-top-rated">
+                            Top rated
+                        </li>
+                        <li class="sidebar__submenu-item contact-fired">
+                            Fired
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/chat.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/chat-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">Chat</a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/deals.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/deals-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Deals
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item deal-low">
+                            Low
+                        </li>
+                        <li class="sidebar__submenu-item deal-high">
+                            High
+                        </li>
+                        <li class="sidebar__submenu-item deal-urgent">
+                            Urgent
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="sidebar__footer">
+        <div class="sidebar__item ">
+            <img src="./assets/icons/sidebar/settings.svg" alt="" class="sidebar__item-icon">
+            <img src="./assets/icons/sidebar/settings-active.svg" alt="" class="sidebar__item-icon-active">
+            <a class="sidebar__item-text">Settings</a>
+        </div>
+        <div class="sidebar__item sidebar__toggle">
+            <img src="./assets/icons/sidebar/toggle.svg" alt="" class="sidebar__item-icon">
+            <img src="./assets/icons/sidebar/toggle-active.svg" alt="" class="sidebar__item-icon-active">
+            <a class="sidebar__item-text">Toggle sidebar</a>
+        </div>
+    </div>
+</section>
+<section class="page">
+    <header class="header">
+        <img src="./assets/img/header/search.svg" alt="" class="header__search">
+        <input type="text" class="header__input" placeholder="Search for a contact">
+        <img src="./assets/img/header/notifications.svg" alt="" class="header__notifications">
+    </header>
+
+    <main class="content">
+        <div class="profile-sidebar">
+            <div class="profile-sidebar-header">
+                <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+
+                <h5>Abigail Johnson</h5>
+                <p>UI Developer (Savior of Mankind)</p>
+                <span>Bay Area, San Francisco, CA</span>
+
+                <div class="d-flex align-self-stretch mg-t-30">
+                    <a href="" class="btn btn-brand-01 btn-sm btn-uppercase flex-fill">Follow</a>
+                    <a href="" class="btn btn-white btn-sm btn-uppercase flex-fill mg-l-5">Message</a>
+                </div>
+            </div><!-- profile-sidebar-header -->
+            <div class="profile-sidebar-body">
+
+                <label class="content-label">Websites &amp; Social Channel</label>
+                <ul class="list-unstyled profile-info-list">
+                    <li><i data-feather="globe"></i> <a href="">http://fenchiumao.me/</a></li>
+                    <li><i data-feather="github"></i> <a href="">@fenchiumao</a></li>
+                    <li><i data-feather="twitter"></i> <a href="">@fenmao</a></li>
+                    <li><i data-feather="instagram"></i> <a href="">@fenchiumao</a></li>
+                    <li><i data-feather="facebook"></i> <a href="">@fenchiumao</a></li>
+                </ul>
+
+                <hr class="mg-y-25">
+
+                <label class="content-label">Contact Information</label>
+                <ul class="list-unstyled profile-info-list mg-b-0">
+                    <li><i data-feather="briefcase"></i> <span class="tx-color-03">Bay Area, San Francisco, CA</span></li>
+                    <li><i data-feather="home"></i> <span class="tx-color-03">Westfield, Oakland, CA</span></li>
+                    <li><i data-feather="smartphone"></i> <a href="">(+1) 012 345 6789</a></li>
+                    <li><i data-feather="phone"></i> <a href="">(+1) 987 654 3201</a></li>
+                    <li><i data-feather="mail"></i> <a href="">me@fenchiumao.me</a></li>
+                </ul>
+            </div><!-- profile-sidebar-body -->
+        </div><!-- profile-sidebar -->
+        <div class="profile-body">
+            <div class="profile-body-header">
+                <div class="nav-wrapper">
+                    <ul class="nav nav-line" id="profileTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="projects-tab" data-toggle="tab" href="#timeline" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="people-tab" data-toggle="tab" href="#people" role="tab" aria-controls="people" aria-selected="false">Connections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                        </li>
+                    </ul>
+                </div><!-- nav-wrapper -->
+            </div><!-- profile-body-header -->
+            <div class="tab-content pd-15 pd-sm-20">
+                <div id="overview" class="tab-pane active show">
+
+                    <div class="stat-profile">
+                        <div class="stat-profile-body">
+                            <div class="row row-xs">
+                                <div class="col">
+                                    <div class="card card-body pd-10 pd-md-15 bd-0 shadow-none bg-primary-light">
+                                        <h1 class="tx-light tx-sans tx-spacing--4 tx-primary mg-b-5">102</h1>
+                                        <p class="tx-13 tx-lg-14 tx-color-02 mg-b-0">Your profile visitors</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card card-body pd-10 pd-md-15 bd-0 shadow-none bg-teal-light">
+                                        <h1 class="mg-b-5 tx-sans tx-spacing--2 tx-light tx-teal">961</h1>
+                                        <p class="tx-13 tx-lg-14 tx-color-03 mg-b-0">Search appearances</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card card-body pd-10 pd-md-15 bd-0 shadow-none bg-pink-light">
+                                        <h1 class="mg-b-5 tx-sans tx-spacing--2 tx-light tx-pink">665</h1>
+                                        <p class="tx-13 tx-lg-14 tx-color-03 mg-b-0">Your activity views</p>
+                                    </div>
+                                </div>
+                            </div><!-- row -->
+                        </div><!-- stat-profile-body -->
+                    </div><!-- stat-profile -->
+
+                    <hr class="mg-y-15 op-0">
+
+                    <label class="content-label content-label-lg mg-b-15 tx-color-01">Biography</label>
+                    <p class="tx-color-03">Redhead, Innovator, Saviour of Mankind, Hopeless Romantic, Attractive 20-something Yogurt Enthusiast. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+
+                    <hr class="mg-y-15 op-0">
+
+                    <label class="content-label content-label-lg mg-b-15 tx-color-01">Work Experience</label>
+                    <ul class="list-unstyled media-list-profile">
+                        <li class="media">
+                            <div class="wd-40 ht-40 bg-teal op-5"></div>
+                            <div class="media-body">
+                                <h6 class="mg-b-5 tx-semibold">Themepixels, Inc. LTD</h6>
+                                <p class="tx-color-03 tx-13">January 2016 - Present</p>
+                                <p>An online-based high performing web and mobile development company, with a passion for making high quality web-based application and services for businesses and organization. </p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="wd-40 ht-40 bg-primary op-5"></div>
+                            <div class="media-body">
+                                <h6 class="mg-b-5 tx-semibold">Berkeley Systems, Inc.</h6>
+                                <p class="tx-color-03 tx-13">December 2012 - November 2015</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="wd-40 ht-40 bg-pink op-5"></div>
+                            <div class="media-body">
+                                <h6 class="mg-b-5 tx-semibold">Berkeley Systems, Inc.</h6>
+                                <p class="tx-color-03 tx-13">December 2012 - November 2015</p>
+                            </div>
+                        </li>
+                    </ul><!-- media-list-profile -->
+
+                    <hr class="mg-y-15 op-0">
+
+                    <label class="content-label content-label-lg mg-b-15 tx-color-01">Educational Background</label>
+                    <ul class="list-unstyled media-list-profile">
+                        <li class="media">
+                            <div class="wd-40 ht-40 bg-gray-400"></div>
+                            <div class="media-body">
+                                <h6 class="mg-b-5 tx-semibold">Graduate in BS in Computer Science</h6>
+                                <p class="tx-color-03 tx-13">Hold Name University class 2006</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="wd-40 ht-40 bg-gray-400"></div>
+                            <div class="media-body">
+                                <h6 class="mg-b-5 tx-semibold">Sacred Heart Academy</h6>
+                                <p class="tx-color-03 tx-13">High school graduate class 2002</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="wd-40 ht-40 bg-gray-400"></div>
+                            <div class="media-body">
+                                <h6 class="mg-b-5 tx-semibold">Loon Central Elementary School</h6>
+                                <p class="tx-color-03 tx-13">Elmentary graduate class 1998</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- tab-content -->
+        </div><!-- profile-body -->
+    </main>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script>
+  $('.sidebar__item').click(function () {
+    $(this).toggleClass('active');
+  })
+
+  $('.sidebar__toggle').click(function () {
+    $('.sidebar').toggleClass('compact');
+  })
+
+  $('.sidebar__user').click(function () {
+    $(this).toggleClass('active');
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    <link href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">-->
+    <link href="./vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='./vendor/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./assets/css/calendar.css">
+
+
+
+    <script>
+
+
+
+    </script>
+    <title>Dental CRM</title>
+</head>
+<body>
+
+<section class="sidebar">
+    <div class="sidebar__header">
+        <h1 class="sidebar__title">
+            <span class="full">Dental CRM</span>
+            <span class="short">DC</span>
+        </h1>
+    </div>
+    <div class="sidebar__body">
+        <div class="sidebar__user">
+            <div class="sidebar__avatar-wrapper">
+                <img src="./assets/img/sidebar/avatar.png" alt="" class="sidebar__avatar">
+            </div>
+            <div class="sidebar__name-container">
+                <p class="sidebar__name">
+                    Sierra Ferguson
+                </p>
+                <p class="sidebar__email">
+                    s.ferguson@gmail.com
+                </p>
+            </div>
+        </div>
+        <nav class="sidebar__nav">
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/dashboard.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/dashboard-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">Dashboard</a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/tasks.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/tasks-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Tasks
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item task-active">
+                            Active
+                        </li>
+                        <li class="sidebar__submenu-item task-completed">
+                            Completed
+                        </li>
+                        <li class="sidebar__submenu-item task-ended">
+                            Ended
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/email.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/email-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Email
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item email-draft">
+                            Draft
+                        </li>
+                        <li class="sidebar__submenu-item email-scheduled">
+                            Scheduled
+                        </li>
+                        <li class="sidebar__submenu-item email-sent">
+                            Sent
+                        </li>
+                        <li class="sidebar__submenu-item email-archived">
+                            Archived
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/contacts.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/contacts-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Contacts
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item contact-new">
+                            New
+                        </li>
+                        <li class="sidebar__submenu-item contact-top-rated">
+                            Top rated
+                        </li>
+                        <li class="sidebar__submenu-item contact-fired">
+                            Fired
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/chat.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/chat-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">Chat</a>
+            </div>
+            <div class="sidebar__item ">
+                <img src="./assets/icons/sidebar/deals.svg" alt="" class="sidebar__item-icon">
+                <img src="./assets/icons/sidebar/deals-active.svg" alt="" class="sidebar__item-icon-active">
+                <a class="sidebar__item-text">
+                    Deals
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item deal-low">
+                            Low
+                        </li>
+                        <li class="sidebar__submenu-item deal-high">
+                            High
+                        </li>
+                        <li class="sidebar__submenu-item deal-urgent">
+                            Urgent
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="sidebar__footer">
+        <div class="sidebar__item ">
+            <img src="./assets/icons/sidebar/settings.svg" alt="" class="sidebar__item-icon">
+            <img src="./assets/icons/sidebar/settings-active.svg" alt="" class="sidebar__item-icon-active">
+            <a class="sidebar__item-text">Settings</a>
+        </div>
+        <div class="sidebar__item sidebar__toggle">
+            <img src="./assets/icons/sidebar/toggle.svg" alt="" class="sidebar__item-icon">
+            <img src="./assets/icons/sidebar/toggle-active.svg" alt="" class="sidebar__item-icon-active">
+            <a class="sidebar__item-text">Toggle sidebar</a>
+        </div>
+    </div>
+</section>
+<section class="page">
+    <header class="header">
+        <img src="./assets/img/header/search.svg" alt="" class="header__search">
+        <input type="text" class="header__input" placeholder="Search for a contact">
+        <img src="./assets/img/header/notifications.svg" alt="" class="header__notifications">
+    </header>
+
+    <main class="content">
+        <div id='calendar' class="content-calendar fc fc-unthemed fc-ltr"></div>
+    </main>
+</section>
+
+
+
+
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src='./vendor/moment/moment.js'></script>
+<script src='./vendor/fullcalendar/fullcalendar.min.js'></script>
+<script src='./assets/js/calendar.js'></script>
+<script src='./assets/js/calendar-events.js'></script>
+<script src="./vendor/select2/js/select2.full.min.js"></script>
+
+
+<script>
+  $('.sidebar__item').click(function () {
+    $(this).toggleClass('active');
+  })
+
+  $('.sidebar__toggle').click(function () {
+    $('.sidebar').toggleClass('compact');
+  })
+
+  $('.sidebar__user').click(function () {
+    $(this).toggleClass('active');
+  })
+</script>
+
+
+
+</body>
+</html>
