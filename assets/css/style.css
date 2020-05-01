@@ -9,7 +9,7 @@
 
 
 html {
-    font-family: 'Poppins', serif;
+    font-family: 'Circe', serif;
     --accent-blue: #109CF1;
     --dark-blue: #334D6E;
     --gray: #90A0B7;
@@ -19,11 +19,16 @@ html {
     --table-gray: #707683;
 }
 
+input {
+    font-family: 'Circe', serif;
+}
+
 body {
     margin: 0;
     background-color: #F5F6F8;
     display: flex;
     color: var(--dark-blue);
+    font-size: 14px;
 }
 
 /*---UTIL---*/
@@ -147,7 +152,49 @@ body {
     box-shadow: none;
 }
 
-/*----------*/
+.tabs {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    border-bottom: 1px solid #EBEFF2;
+}
+
+.tabs__item + .tabs__item {
+    margin-left: 25px;
+}
+
+.tabs__link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+    color: var(--dark-blue);
+}
+
+.tabs__link:hover {
+    color: var(--black);
+}
+
+.tabs__link.active {
+    color: var(--accent-blue);
+}
+
+.tabs__link.active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background-color: var(--accent-blue);
+    height: 1px;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+    /*----------*/
 
 .page {
     width: 100%;
@@ -155,7 +202,7 @@ body {
     overflow: hidden;
 }
 
-.content {
+.content-wrapper {
     overflow-y: auto;
     height: calc(100% - 60px);
     padding: 35px;
@@ -301,7 +348,6 @@ body {
 
 .sidebar__name {
     font-weight: 500;
-    font-size: 14px;
     color: var(--black);
     margin-bottom: 5px;
 }
@@ -461,7 +507,6 @@ body {
     padding-left: 12px;
     font-weight: normal;
     font-size: 12px;
-    font-family: Poppins, serif;
 }
 
 .header__input::placeholder {

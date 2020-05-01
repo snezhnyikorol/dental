@@ -2,9 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9326b500-cc30-40e6-a677-821d547b8684" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-self.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Black.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BlackItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BlackItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BlackItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BoldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-BoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBoldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraBoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLightItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLightItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ExtraLightItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-LightItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-LightItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-LightItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-MediumItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-MediumItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-MediumItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBoldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-SemiBoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Thin.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ThinItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ThinItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Poppins-ThinItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +111,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -61,7 +139,8 @@
       <workItem from="1587905610386" duration="16991000" />
       <workItem from="1588181588120" duration="1241000" />
       <workItem from="1588256186936" duration="9136000" />
-      <workItem from="1588327101578" duration="644000" />
+      <workItem from="1588327101578" duration="819000" />
+      <workItem from="1588343921592" duration="11969000" />
     </task>
     <servers />
   </component>
