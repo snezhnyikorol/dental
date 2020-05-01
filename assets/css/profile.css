@@ -4,7 +4,6 @@
 
 .profile__sidebar {
     width: 250px;
-    padding: 30px;
     background: var(--white);
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
@@ -20,6 +19,8 @@
 
 .profile__sidebar-header {
     text-align: center;
+    border-bottom: 1px solid #EBEFF2;
+    padding: 30px;
 }
 
 .profile__avatar {
@@ -43,7 +44,7 @@
 }
 
 .profile__sidebar-body {
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .profile__contact {
