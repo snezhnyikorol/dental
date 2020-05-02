@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9326b500-cc30-40e6-a677-821d547b8684" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icons/sidebar/toggle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icons/sidebar/toggle.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile-self.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-self.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,7 @@
       <workItem from="1588181588120" duration="1241000" />
       <workItem from="1588256186936" duration="9136000" />
       <workItem from="1588327101578" duration="819000" />
-      <workItem from="1588343921592" duration="18147000" />
+      <workItem from="1588343921592" duration="18389000" />
     </task>
     <servers />
   </component>
