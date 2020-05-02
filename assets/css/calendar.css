@@ -16,14 +16,14 @@ a:not([href]):not([tabindex]):focus {
     .content-body-calendar {
         padding: 20px; } }
 
-.content-calendar {
-    background-color: #fff;
-    border: 1px solid rgba(224, 225, 235, 0.85);
-    height: calc(100vh - 80px);
-    box-shadow: 0 4px 12px 0 rgba(131, 146, 165, 0.15), 2px 2px 5px 0 rgba(60, 70, 83, 0.04); }
-@media (min-width: 576px) {
-    .content-calendar {
-        height: calc(100vh - 98px); } }
+/*.content-calendar {*/
+/*    background-color: #fff;*/
+/*    border: 1px solid rgba(224, 225, 235, 0.85);*/
+/*    height: calc(100vh - 80px);*/
+/*    box-shadow: 0 4px 12px 0 rgba(131, 146, 165, 0.15), 2px 2px 5px 0 rgba(60, 70, 83, 0.04); }*/
+/*@media (min-width: 576px) {*/
+/*    .content-calendar {*/
+/*        height: calc(100vh - 98px); } }*/
 .content-calendar .fc-toolbar.fc-header-toolbar {
     height: 55px;
     margin-bottom: 0;

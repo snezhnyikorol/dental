@@ -5,18 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/profile.css">
+
+    <link href='./vendor/fullcalendar/fullcalendar.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/calendar.css">
     <title>Dental CRM</title>
 </head>
 <body>
 
 <section class="sidebar">
     <div class="sidebar__header">
-        <h1 class="sidebar__title">
-            <span class="full">Dental CRM</span>
-            <span class="short">DC</span>
-        </h1>
+        <div>
+            <h1 class="sidebar__title">
+                <span class="full">ELEGIA</span>
+                <span class="short">EL</span>
+            </h1>
+            <p class="sidebar__subtitle">
+                Clinic CRM
+            </p>
+        </div>
     </div>
     <div class="sidebar__body">
         <div class="sidebar__user">
@@ -34,33 +43,21 @@
         </div>
         <nav class="sidebar__nav">
             <div class="sidebar__item ">
-                <img src="./assets/icons/sidebar/dashboard.svg" alt="" class="sidebar__item-icon">
-                <img src="./assets/icons/sidebar/dashboard-active.svg" alt="" class="sidebar__item-icon-active">
+                <i data-feather="box"></i>
                 <a class="sidebar__item-text">Dashboard</a>
             </div>
             <div class="sidebar__item ">
-                <img src="./assets/icons/sidebar/tasks.svg" alt="" class="sidebar__item-icon">
-                <img src="./assets/icons/sidebar/tasks-active.svg" alt="" class="sidebar__item-icon-active">
-                <a class="sidebar__item-text">
-                    Tasks
-                    <ul class="sidebar__submenu">
-                        <li class="sidebar__submenu-item task-active">
-                            Active
-                        </li>
-                        <li class="sidebar__submenu-item task-completed">
-                            Completed
-                        </li>
-                        <li class="sidebar__submenu-item task-ended">
-                            Ended
-                        </li>
-                    </ul>
-                </a>
+                <i data-feather="calendar"></i>
+                <a class="sidebar__item-text">Календарь</a>
             </div>
             <div class="sidebar__item ">
-                <img src="./assets/icons/sidebar/email.svg" alt="" class="sidebar__item-icon">
-                <img src="./assets/icons/sidebar/email-active.svg" alt="" class="sidebar__item-icon-active">
+                <i data-feather="calendar"></i>
+                <a class="sidebar__item-text">Чат</a>
+            </div>
+            <div class="sidebar__item ">
+                <i data-feather="inbox"></i>
                 <a class="sidebar__item-text">
-                    Email
+                    Mail
                     <ul class="sidebar__submenu">
                         <li class="sidebar__submenu-item email-draft">
                             Draft
@@ -78,10 +75,42 @@
                 </a>
             </div>
             <div class="sidebar__item ">
-                <img src="./assets/icons/sidebar/contacts.svg" alt="" class="sidebar__item-icon">
-                <img src="./assets/icons/sidebar/contacts-active.svg" alt="" class="sidebar__item-icon-active">
+                <i data-feather="user"></i>
+                <a class="sidebar__item-text">Пациенты</a>
+            </div>
+            <div class="sidebar__item ">
+                <i data-feather="folder"></i>
+                <a class="sidebar__item-text">Записи пациентов</a>
+            </div>
+            <div class="sidebar__item ">
+                <i data-feather="clipboard"></i>
                 <a class="sidebar__item-text">
-                    Contacts
+                    Задачи
+                    <ul class="sidebar__submenu">
+                        <li class="sidebar__submenu-item task-active">
+                            Active
+                        </li>
+                        <li class="sidebar__submenu-item task-completed">
+                            Completed
+                        </li>
+                        <li class="sidebar__submenu-item task-ended">
+                            Ended
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="sidebar__item ">
+                <i data-feather="database"></i>
+                <a class="sidebar__item-text">Касса</a>
+            </div>
+            <div class="sidebar__item ">
+                <i data-feather="package"></i>
+                <a class="sidebar__item-text">Склад</a>
+            </div>
+            <div class="sidebar__item ">
+                <i data-feather="user"></i>
+                <a class="sidebar__item-text">
+                    Персонал
                     <ul class="sidebar__submenu">
                         <li class="sidebar__submenu-item contact-new">
                             New
@@ -95,40 +124,23 @@
                     </ul>
                 </a>
             </div>
-            <div class="sidebar__item ">
-                <img src="./assets/icons/sidebar/chat.svg" alt="" class="sidebar__item-icon">
-                <img src="./assets/icons/sidebar/chat-active.svg" alt="" class="sidebar__item-icon-active">
-                <a class="sidebar__item-text">Chat</a>
-            </div>
-            <div class="sidebar__item ">
-                <img src="./assets/icons/sidebar/deals.svg" alt="" class="sidebar__item-icon">
-                <img src="./assets/icons/sidebar/deals-active.svg" alt="" class="sidebar__item-icon-active">
-                <a class="sidebar__item-text">
-                    Deals
-                    <ul class="sidebar__submenu">
-                        <li class="sidebar__submenu-item deal-low">
-                            Low
-                        </li>
-                        <li class="sidebar__submenu-item deal-high">
-                            High
-                        </li>
-                        <li class="sidebar__submenu-item deal-urgent">
-                            Urgent
-                        </li>
-                    </ul>
-                </a>
-            </div>
         </nav>
     </div>
     <div class="sidebar__footer">
-        <div class="sidebar__item ">
-            <img src="./assets/icons/sidebar/settings.svg" alt="" class="sidebar__item-icon">
-            <img src="./assets/icons/sidebar/settings-active.svg" alt="" class="sidebar__item-icon-active">
-            <a class="sidebar__item-text">Settings</a>
+        <div>
+            <div class="sidebar__item ">
+                <i data-feather="aperture"></i>
+                <a class="sidebar__item-text">Настройки</a>
+            </div>
+            <div class="sidebar__item ">
+                <i data-feather="help-circle"></i>
+                <a class="sidebar__item-text">Documentation</a>
+            </div>
         </div>
         <div class="sidebar__item sidebar__toggle">
-            <img src="./assets/icons/sidebar/toggle.svg" alt="" class="sidebar__item-icon">
-            <img src="./assets/icons/sidebar/toggle-active.svg" alt="" class="sidebar__item-icon-active">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.89543 0 2V12C0 13.1046 0.89543 14 2 14H12C13.1046 14 14 13.1046 14 12V2C14 0.895431 13.1046 0 12 0H2ZM5 2C4.44772 2 4 2.44772 4 3V11C4 11.5523 4.44772 12 5 12C5.55228 12 6 11.5523 6 11V3C6 2.44772 5.55228 2 5 2Z"/>
+            </svg>
             <a class="sidebar__item-text">Toggle sidebar</a>
         </div>
     </div>
@@ -222,10 +234,10 @@
                 <div class="tabs-wrapper">
                     <ul class="tabs">
                         <li class="tabs__item"><a class="tabs__link active" href="#details">Профиль</a></li>
-                        <li class="tabs__item"><a class="tabs__link" href=#calendar">Календарь</a></li>
+                        <li class="tabs__item"><a class="tabs__link" href="#calendar">Календарь</a></li>
                     </ul>
                 </div>
-                <div class="tab-content">
+                <div class="tab-content content-calendar">
                     <div id="details">
                         <div class="stat">
                             <div class="stat__col">
@@ -318,14 +330,21 @@
                             </li>
                         </ul>
                     </div>
+                    <div id="calendar">
 
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src='./vendor/moment/moment.js'></script>
+<script src='./vendor/fullcalendar/fullcalendar.min.js'></script>
+<script src='./assets/js/calendar.js'></script>
+<script src='./assets/js/calendar-events.js'></script>
+<script src="./vendor/select2/js/select2.full.min.js"></script>
 <script src="./vendor/feather-icons/feather.min.js"></script>
 
 <script>
@@ -340,6 +359,15 @@
 
   $('.sidebar__user').click(function () {
     $(this).toggleClass('active');
+  })
+
+  $('.tabs__link').click(function (event) {
+    event.preventDefault();
+    $('.tabs__link').removeClass('active');
+    $(this).addClass('active');
+    let id = $(this).attr('href');
+    $('.tab-content').children().css('display', 'none');
+    $(id).css('display', 'block')
   })
 </script>
 
