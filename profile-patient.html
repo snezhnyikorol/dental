@@ -8,6 +8,7 @@
     <link href="./vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/css/profile-patient.css">
 
     <link href='./vendor/fullcalendar/fullcalendar.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/calendar.css">
@@ -170,7 +171,6 @@
                         Минск, Жуковского 10/2
                     </p>
 
-                    <button class="btn btn-secondary">Отправить сообщение</button>
                 </div>
 
                 <div class="profile__sidebar-body">
@@ -234,6 +234,7 @@
                 <div class="tabs-wrapper">
                     <ul class="tabs">
                         <li class="tabs__item"><a class="tabs__link active" href="#details">Профиль</a></li>
+                        <li class="tabs__item"><a class="tabs__link" href="#records">Записи</a></li>
                         <li class="tabs__item"><a class="tabs__link" href="#calendar">Календарь</a></li>
                     </ul>
                 </div>
@@ -242,102 +243,105 @@
                         <div class="stat">
                             <div class="stat__col">
                                 <div class="stat__card">
-                                    <h2 class="stat__count">102</h2>
-                                    <p class="stat__title">Количество визитов за месяц</p>
+                                    <h2 class="stat__count">44</h2>
+                                    <p class="stat__title">Количество записей</p>
                                 </div>
                             </div>
                             <div class="stat__col">
                                 <div class="stat__card">
                                     <h2 class="stat__count">5</h2>
-                                    <p class="stat__title">Количество визитов сегодня</p>
-                                </div>
-                            </div>
-                            <div class="stat__col">
-                                <div class="stat__card">
-                                    <h2 class="stat__count">2</h2>
-                                    <p class="stat__title">Количество визитов сегодня осталось</p>
+                                    <p class="stat__title">Количество записей за месяц</p>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="profile__subtitle">БИОГРАФИЯ</h3>
-                        <p>
-                            Redhead, Innovator, Saviour of Mankind, Hopeless Romantic, Attractive 20-something Yogurt Enthusiast. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                        <h3 class="profile__subtitle">ЗАПИСИ (СЕГОДНЯ)</h3>
-                        <ul class="profile__patient-list">
-                            <li class="profile__patient">
-                                <div class="profile__patient-img">
-                                    <img src="https://via.placeholder.com/500/637382/fff" alt="">
+                        <div class="details__body">
+                            <h2 class="details__title">Общая информация</h2>
+                            <div class="details__body-container">
+                                <div class="details__section">
+                                    <h3 class="details__section-title">Frist data</h3>
+                                    <div class="details__item">
+                                        <p class="details__label">Полное Имя:</p>
+                                        <p class="details__text">Усович Кристина Олеговна</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Дата рождения:</p>
+                                        <p class="details__text">March 14, 1993</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Пол:</p>
+                                        <p class="details__text">женский</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Семейное положение:</p>
+                                        <p class="details__text">холост</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Связанные контакты:</p>
+                                        <a href="#" class="details__text details__link">Курчик Александр</a>
+                                    </div>
                                 </div>
-                                <div class="profile__patient-text">
-                                    <h4>Пациент</h4>
-                                    <p class="time">22/05/2020 15:30</p>
-                                    <p class="note"></p>
+                                <div class="details__section">
+                                    <h3 class="details__section-title">Passport Data:</h3>
+                                    <div class="details__item">
+                                        <p class="details__label">Гражданство:</p>
+                                        <p class="details__text">Республика Беларусь</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Прописка:</p>
+                                        <p class="details__text">г. Минск, пр-т Партизанский, 54</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Регистрация:</p>
+                                        <p class="details__text">г. Минск, пр-т Партизанский, 54</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Номер:</p>
+                                        <p class="details__text">МС 2397798</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Инд. Номер:</p>
+                                        <p class="details__text">3040697В008РВ0</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Выдан:</p>
+                                        <p class="details__text">Минким РУВД Партизанского района</p>
+                                    </div>
+                                    <!--                                file-->
                                 </div>
-                            </li>
-                            <li class="profile__patient">
-                                <div class="profile__patient-img">
-                                    <img src="https://via.placeholder.com/500/637382/fff" alt="">
+                                <div class="details__section">
+                                    <h3 class="details__section-title">Medical data</h3>
+                                    <div class="details__item">
+                                        <p class="details__label">Хронические заболевания:</p>
+                                        <p class="details__text">Астма, Гастрит</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Аллергия на лекарства:</p>
+                                        <p class="details__text">???</p>
+                                    </div>
+                                    <div class="details__item">
+                                        <p class="details__label">Еще что-то:</p>
+                                        <p class="details__text">???</p>
+                                    </div>
                                 </div>
-                                <div class="profile__patient-text">
-                                    <h4>Пациент</h4>
-                                    <p class="time">22/05/2020 17:00</p>
-                                    <p class="note"></p>
-                                </div>
-                            </li>
-                            <li class="profile__patient">
-                                <div class="profile__patient-img">
-                                    <img src="https://via.placeholder.com/500/637382/fff" alt="">
-                                </div>
-                                <div class="profile__patient-text">
-                                    <h4>Пациент</h4>
-                                    <p class="time">22/05/2020 18:30</p>
-                                    <p class="note"></p>
-                                </div>
-                            </li>
-                        </ul>
-                        <h3 class="profile__subtitle">ЗАПИСИ (ЗАВТРА)</h3>
-                        <ul class="profile__patient-list">
-                            <li class="profile__patient">
-                                <div class="profile__patient-img">
-                                    <img src="https://via.placeholder.com/500/637382/fff" alt="">
-                                </div>
-                                <div class="profile__patient-text">
-                                    <h4>Пациент</h4>
-                                    <p class="time">22/05/2020 15:30</p>
-                                    <p class="note"></p>
-                                </div>
-                            </li>
-                            <li class="profile__patient">
-                                <div class="profile__patient-img">
-                                    <img src="https://via.placeholder.com/500/637382/fff" alt="">
-                                </div>
-                                <div class="profile__patient-text">
-                                    <h4>Пациент</h4>
-                                    <p class="time">22/05/2020 17:00</p>
-                                    <p class="note"></p>
-                                </div>
-                            </li>
-                            <li class="profile__patient">
-                                <div class="profile__patient-img">
-                                    <img src="https://via.placeholder.com/500/637382/fff" alt="">
-                                </div>
-                                <div class="profile__patient-text">
-                                    <h4>Пациент</h4>
-                                    <p class="time">22/05/2020 18:30</p>
-                                    <p class="note"></p>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+
+                        </div>
                     </div>
+
                     <div id="calendar">
 
                     </div>
+
+                    <div id="records">
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </main>
 </section>
+
 
 <script src="./vendor/jquery/jquery.min.js"></script>
 <script src='./vendor/moment/moment.js'></script>
@@ -361,14 +365,14 @@
     $(this).toggleClass('active');
   })
 
-  $('.tabs__link').click(function (event) {
-    event.preventDefault();
-    $('.tabs__link').removeClass('active');
-    $(this).addClass('active');
-    let id = $(this).attr('href');
-    $('.tab-content').children().css('display', 'none');
-    $(id).css('display', 'block')
-  })
+    $('.tabs__link').click(function (event) {
+      event.preventDefault();
+      $('.tabs__link').removeClass('active');
+      $(this).addClass('active');
+      let id = $(this).attr('href');
+      $('.tab-content').children().css('display', 'none');
+      $(id).css('display', 'block')
+    })
 </script>
 
 </body>

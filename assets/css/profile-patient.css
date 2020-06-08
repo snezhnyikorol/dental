@@ -1,0 +1,77 @@
+.details__body {
+    margin-top: 40px;
+}
+
+.details__body-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details__section {
+    margin-bottom: 30px;
+}
+
+.details__section:nth-child(odd) {
+    padding-right: 35px;
+    border-right: 1px solid #EBEFF2;
+    min-width: 321px;
+}
+
+.details__section:nth-child(even) {
+    padding-left: 30px;
+}
+
+.details__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--gray);
+}
+
+.details__section-title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--accent-blue);
+    margin-bottom: 5px;
+}
+
+.details__item {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2px 0;
+}
+
+.details__label {
+    font-size: 13px;
+    color: #4C5862;
+    opacity: 0.5;
+    width: 125px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    min-width: 125px;
+    max-width: 125px;
+}
+
+.details__text {
+    font-size: 13px;
+    color: #4C5862;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    max-width: 250px;
+}
+
+.details__link {
+    color: var(--accent-blue);
+    padding-right: 25px;
+    position: relative;
+    text-decoration: none;
+}
+
+.details__link:after {
+    content: url("../../assets/icons/chain.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+}
