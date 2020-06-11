@@ -75,3 +75,161 @@
     top: 0;
     right: 0;
 }
+
+.records__header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.records__search {
+    display: flex;
+    padding: 12px 18px;
+    background: #F5F8FA;
+    border-radius: 4px;
+    width: 45%;
+    min-width: 200px;
+}
+
+.records__search-input {
+    padding-left: 15px;
+    border: none;
+    background-color: rgba(255,255,255,0);
+}
+
+.records__search-input:focus {
+    outline: none;
+}
+
+.records__search-input::placeholder {
+    color: var(--gray);
+}
+
+.records__view {
+    color: #C2CFE0;
+}
+
+.tiles .records__view {
+    color: var(--accent-blue);
+}
+
+.records__container .report-wrapper {
+    display: block;
+}
+
+.records__container.tiles .report-wrapper {
+    display: none;
+}
+
+.records__container .tiles-wrapper {
+    display: none;
+}
+
+.records__container.tiles .tiles-wrapper {
+    display: block;
+}
+
+.records__body {
+    margin-top: 20px;
+}
+
+.tile {
+    background: var(--white);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 16px;
+}
+
+.tile__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tile__title {
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: var(--table-black);
+}
+
+.tile__call {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+}
+
+.tile__body {
+    display: flex;
+    margin-top: 5px;
+}
+
+.tile__label {
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+    opacity: 0.5;
+    margin-right: 8px;
+}
+
+.tile__text {
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+}
+
+.tile__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.tile__user {
+    display: flex;
+    align-items: center;
+}
+
+.tile__img-wrapper {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.tile__img-wrapper img {
+    border-radius: 100%;
+    width: 100%;
+}
+
+.tile__name {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--table-gray);
+}
+
+.tile__actions {
+    display: flex;
+    align-items: center;
+}
+
+.tile__edit, .tile__delete {
+    height: 15px;
+    color: #C2CFE0;
+}
+
+.tile__edit svg, .tile__delete svg {
+    height: 100%;
+}
+
+.tile__status {
+    background: #F7CB5B;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    padding: 5px 0;
+    text-align: center;
+    width: 84px;
+    margin-left: 10px;
+}

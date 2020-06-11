@@ -190,8 +190,8 @@ body {
     height: 1px;
 }
 
-.tab-content {
-    /*padding: 20px;*/
+.tab-content>div:not(#calendar) {
+    padding: 20px;
 }
 
 .tab-content > div {
