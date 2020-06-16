@@ -69,9 +69,9 @@
                     </ul>
                 </a>
             </div>
-            <div class="sidebar__item ">
+            <div class="sidebar__item">
                 <i data-feather="user"></i>
-                <a class="sidebar__item-text">Пациенты</a>
+                <a href="./patients.html" class="sidebar__item-text">Пациенты</a>
             </div>
             <div class="sidebar__item ">
                 <i data-feather="folder"></i>
@@ -102,7 +102,7 @@
                 <i data-feather="package"></i>
                 <a class="sidebar__item-text">Склад</a>
             </div>
-            <div class="sidebar__item ">
+            <div class="sidebar__item active">
                 <i data-feather="user"></i>
                 <a class="sidebar__item-text">
                     Персонал
@@ -512,6 +512,12 @@
     $('.sidebar__user').click(function () {
       $(this).toggleClass('active');
     })
+
+  $('.report__body tr').click(function (event) {
+    if (!($(event.target).hasClass('custom-checkbox')||$(event.target).hasClass('custom-checkbox__label')||$(event.target).hasClass('custom-checkbox__input'))) {
+      window.location.href = './profile.html';
+    }
+  })
 </script>
 
 </body>

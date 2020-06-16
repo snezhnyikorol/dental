@@ -49,7 +49,7 @@
             </div>
             <div class="sidebar__item ">
                 <i data-feather="calendar"></i>
-                <a href="./calendar.html" class="sidebar__item-text">Календарь</a>
+                <a class="sidebar__item-text">Календарь</a>
             </div>
             <div class="sidebar__item ">
                 <i data-feather="calendar"></i>
@@ -75,9 +75,9 @@
                     </ul>
                 </a>
             </div>
-            <div class="sidebar__item active">
+            <div class="sidebar__item ">
                 <i data-feather="user"></i>
-                <a href="./patients.html" class="sidebar__item-text">Пациенты</a>
+                <a class="sidebar__item-text">Пациенты</a>
             </div>
             <div class="sidebar__item ">
                 <i data-feather="folder"></i>
@@ -110,7 +110,7 @@
             </div>
             <div class="sidebar__item ">
                 <i data-feather="user"></i>
-                <a href="./profiles.html" class="sidebar__item-text">
+                <a class="sidebar__item-text">
                     Персонал
                     <ul class="sidebar__submenu">
                         <li class="sidebar__submenu-item contact-new">
@@ -158,75 +158,149 @@
             <div class="profile__sidebar">
 
                 <div class="profile__sidebar-header">
-                    <div class="profile__avatar-wrapper">
-                        <img src="https://via.placeholder.com/500/637382/fff" alt="" class="profile__avatar">
+                    <h6 class="tx-14 tx-color-01 mg-b-0">Recent Conversations</h6>
+                    <div>
+                        <a href="" data-toggle="tooltip" title="New Conversation"><i data-feather="user-plus"></i></a>
+                        <a href="" data-toggle="tooltip" title="Options"><i data-feather="more-vertical"></i></a>
                     </div>
-                    <h5 class="profile__name">
-                        Курчик Александр
-                    </h5>
-                    <p class="profile__position">
-                        Хирург-ортопед
-                    </p>
-                    <p class="profile__location">
-                        Минск, Жуковского 10/2
-                    </p>
-
                 </div>
 
                 <div class="profile__sidebar-body">
-                    <label class="profile__label">
-                        ССЫЛКИ:
-                    </label>
-                    <ul class="profile__info">
-                        <li class="profile__info-item">
-                            <i data-feather="globe"></i>
-                            <a href="">http://resume.kurchik/</a>
+                    <ul class="chat-list">
+                        <li class="chat-item unread">
+                            <div class="avatar avatar-online"><span class="avatar-initial rounded-circle bg-primary">j</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Joyce Marin</span>
+                                    <span>2:30pm</span>
+                                </div>
+                                <p>At vero eos et accusamus et iusto est tempore</p>
+                                <span class="chat-msg-count">2</span>
+                            </div>
                         </li>
-                        <li class="profile__info-item">
-                            <i data-feather="github"></i>
-                            <a href="">@kurchik</a>
+                        <li class="chat-item">
+                            <div class="avatar avatar-online"><span class="avatar-initial rounded-circle bg-dark">g</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>George Winslett</span>
+                                    <span>12:35pm</span>
+                                </div>
+                                <p>At vero eos et accusamus et iusto est tempore</p>
+                            </div>
                         </li>
-                        <li class="profile__info-item">
-                            <i data-feather="twitter"></i>
-                            <a href="">@kurchik</a>
+                        <li class="chat-item">
+                            <div class="avatar avatar-offline"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Vilma Baumann</span>
+                                    <span>10:30am</span>
+                                </div>
+                                <p>Nam libero tempore, cum soluta nobis est eligendi </p>
+                            </div>
                         </li>
-                        <li class="profile__info-item">
-                            <i data-feather="instagram"></i>
-                            <a href="">@kurchik</a>
+                        <li class="chat-item">
+                            <div class="avatar avatar-online"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Gregory Thompson</span>
+                                    <span>08:15am</span>
+                                </div>
+                                <p>At vero eos et accusamus et iusto est tempore</p>
+                            </div>
                         </li>
-                        <li class="profile__info-item">
-                            <i data-feather="facebook"></i>
-                            <a href="">@kurchik</a>
+                        <li class="chat-item">
+                            <div class="avatar avatar-online"><span class="avatar-initial rounded-circle bg-pink">s</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Shelley Bailes</span>
+                                    <span>06:30am</span>
+                                </div>
+                                <p>Excepteur sint occaecat cupidatat non proides</p>
+                            </div>
+                        </li>
+                        <li class="chat-item unread">
+                            <div class="avatar avatar-offline"><span class="avatar-initial rounded-circle bg-teal">a</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Alana Ogden</span>
+                                    <span>Yesterday</span>
+                                </div>
+                                <p>At vero eos et accusamus et iusto est tempore</p>
+                                <span class="chat-msg-count">5</span>
+                            </div>
+                        </li>
+                        <li class="chat-item unread">
+                            <div class="avatar avatar-online"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Cheryl Arnold</span>
+                                    <span>Yesterday</span>
+                                </div>
+                                <p>Nam libero tempore, cum soluta nobis est eligendi </p>
+                                <span class="chat-msg-count">1</span>
+                            </div>
+                        </li>
+                        <li class="chat-item">
+                            <div class="avatar avatar-online"><span class="avatar-initial rounded-circle bg-secondary">b</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Barbara Jordan</span>
+                                    <span>Jul 02</span>
+                                </div>
+                                <p>Excepteur sint occaecat cupidatat non proides</p>
+                            </div>
+                        </li>
+                        <li class="chat-item">
+                            <div class="avatar avatar-offline"><span class="avatar-initial rounded-circle bg-primary">m</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Mark Moreno</span>
+                                    <span>Jun 30</span>
+                                </div>
+                                <p>Excepteur sint occaecat cupidatat non proides</p>
+                            </div>
+                        </li>
+                        <li class="chat-item">
+                            <div class="avatar avatar-offline"><span class="avatar-initial rounded-circle bg-warning">j</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>John Godinez</span>
+                                    <span>Jun 30</span>
+                                </div>
+                                <p>Excepteur sint occaecat cupidatat non proides</p>
+                            </div>
+                        </li>
+                        <li class="chat-item unread">
+                            <div class="avatar avatar-online"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Edmund Trivett</span>
+                                    <span>Jun 29</span>
+                                </div>
+                                <p>At vero eos et accusamus et iusto est tempore</p>
+                                <span class="chat-msg-count">1</span>
+                            </div>
+                        </li>
+                        <li class="chat-item">
+                            <div class="avatar avatar-offline"><span class="avatar-initial rounded-circle bg-indigo">g</span></div>
+                            <div class="chat-item-body">
+                                <div>
+                                    <span>Glenn Kane</span>
+                                    <span>Jun 29</span>
+                                </div>
+                                <p>Excepteur sint occaecat cupidatat non proides</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="profile__sidebar-footer">
-                    <label class="profile__label">
-                        КОНТАКТНАЯ ИНФОРМАЦИЯ
-                    </label>
-                    <ul class="profile__info">
-                        <li class="profile__info-item">
-                            <i data-feather="briefcase"></i>
-                            <span>Минск, Гурского 44/2</span>
-                        </li>
-                        <li class="profile__info-item">
-                            <i data-feather="home"></i>
-                            <span>Минск, Жуковского 10/2</span>
-                        </li>
-                        <li class="profile__info-item">
-                            <i data-feather="smartphone"></i>
-                            <a href="">+375 (29) 133 80 75</a>
-                        </li>
-                        <li class="profile__info-item">
-                            <i data-feather="phone"></i>
-                            <a href="">+375 (29) xxx xx xx</a>
-                        </li>
-                        <li class="profile__info-item">
-                            <i data-feather="mail"></i>
-                            <a href="">kurchik.sasha@mail.ru</a>
-                        </li>
-                    </ul>
+                    <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                    <h6 class="chat-loggeduser">Louise Kate <span>(Me)</span></h6>
+                    <div>
+                        <a href="" data-toggle="tooltip" title="Enable Mic"><i data-feather="mic"></i></a>
+                        <a href="" data-toggle="tooltip" title="Settings"><i data-feather="settings"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -896,10 +970,10 @@
 <script src="./vendor/feather-icons/feather.min.js"></script>
 
 <script>
-    feather.replace();
-  // $('.sidebar__item').click(function () {
-  //   $(this).toggleClass('active');
-  // })
+  feather.replace();
+  $('.sidebar__item').click(function () {
+    $(this).toggleClass('active');
+  })
 
   $('.sidebar__toggle').click(function () {
     $('.sidebar').toggleClass('compact');
@@ -909,40 +983,40 @@
     $(this).toggleClass('active');
   })
 
-    $('.tabs__link').click(function (event) {
-      event.preventDefault();
-      $('.tabs__link').removeClass('active');
-      $(this).addClass('active');
-      let id = $(this).attr('href');
-      $(this).closest('.tabs-wrapper').parent().find('.tab-content').children().css('display', 'none');
-      $(id).css('display', 'block')
-    })
+  $('.tabs__link').click(function (event) {
+    event.preventDefault();
+    $('.tabs__link').removeClass('active');
+    $(this).addClass('active');
+    let id = $(this).attr('href');
+    $(this).closest('.tabs-wrapper').parent().find('.tab-content').children().css('display', 'none');
+    $(id).css('display', 'block')
+  })
 
-    $('.records__view').click(function (event) {
-        $('.records__container').toggleClass('tiles');
-    })
+  $('.records__view').click(function (event) {
+    $('.records__container').toggleClass('tiles');
+  })
 
-    $('.accordion__header').click(function (event) {
-        $(this).parent().find('.accordion__container').slideToggle('fast');
-        if ($(this).find('.accordion__icon').css('transform') == 'none') {
-          $(this).find('.accordion__icon').css('transform', 'rotate(180deg) translateY(6px)');
-        } else {
-          $(this).find('.accordion__icon').css('transform', 'none');
-        }
+  $('.accordion__header').click(function (event) {
+    $(this).parent().find('.accordion__container').slideToggle('fast');
+    if ($(this).find('.accordion__icon').css('transform') == 'none') {
+      $(this).find('.accordion__icon').css('transform', 'rotate(180deg) translateY(6px)');
+    } else {
+      $(this).find('.accordion__icon').css('transform', 'none');
+    }
 
-    })
+  })
 
-    $('.tile').click(function (event) {
-        $('#modal').fadeIn(200);
-    })
+  $('.tile').click(function (event) {
+    $('#modal').fadeIn(200);
+  })
 
-    $('.modal__close').click(function () {
-      $('#modal').fadeOut(200);
-    })
+  $('.modal__close').click(function () {
+    $('#modal').fadeOut(200);
+  })
 
-    $('.modal__backdrop').click(function () {
-      $('#modal').fadeOut(200);
-    })
+  $('.modal__backdrop').click(function () {
+    $('#modal').fadeOut(200);
+  })
 </script>
 
 </body>

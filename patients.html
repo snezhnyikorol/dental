@@ -69,7 +69,7 @@
                     </ul>
                 </a>
             </div>
-            <div class="sidebar__item ">
+            <div class="sidebar__item active">
                 <i data-feather="user"></i>
                 <a class="sidebar__item-text">Пациенты</a>
             </div>
@@ -511,6 +511,12 @@
 
     $('.sidebar__user').click(function () {
       $(this).toggleClass('active');
+    })
+
+    $('.report__body tr').click(function (event) {
+        if (!($(event.target).hasClass('custom-checkbox')||$(event.target).hasClass('custom-checkbox__label')||$(event.target).hasClass('custom-checkbox__input'))) {
+          window.location.href = './profile-patient.html';
+        }
     })
 </script>
 

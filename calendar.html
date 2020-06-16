@@ -62,7 +62,7 @@
                 <i data-feather="box"></i>
                 <a class="sidebar__item-text">Dashboard</a>
             </div>
-            <div class="sidebar__item ">
+            <div class="sidebar__item active">
                 <i data-feather="calendar"></i>
                 <a class="sidebar__item-text">Календарь</a>
             </div>
@@ -92,7 +92,7 @@
             </div>
             <div class="sidebar__item ">
                 <i data-feather="user"></i>
-                <a class="sidebar__item-text">Пациенты</a>
+                <a href="./patients.html" class="sidebar__item-text">Пациенты</a>
             </div>
             <div class="sidebar__item ">
                 <i data-feather="folder"></i>
@@ -125,7 +125,7 @@
             </div>
             <div class="sidebar__item ">
                 <i data-feather="user"></i>
-                <a class="sidebar__item-text">
+                <a href="./profiles.html" class="sidebar__item-text">
                     Персонал
                     <ul class="sidebar__submenu">
                         <li class="sidebar__submenu-item contact-new">
@@ -173,6 +173,37 @@
     </main>
 </section>
 
+<div class="modal__container" id="modal">
+    <div class="modal__backdrop"></div>
+    <div class="modal__window">
+        <div class="modal__header">
+            <h3 class="modal__title">
+                Create New Event
+            </h3>
+            <div class="modal__close">
+                <i data-feather="x"></i>
+            </div>
+        </div>
+        <div class="modal__body">
+            <div class="input-group">
+                <input id="eventStartDate" type="text">
+                <label for="eventStartDate">START DATE</label>
+            </div>
+            <div class="input-group">
+                <input id="eventEndDate" type="text">
+                <label for="eventEndDate">END DATE</label>
+            </div>
+            <div class="input-group">
+                <textarea id="remarks" placeholder="Description (optional)"></textarea>
+            </div>
+        </div>
+        <div class="modal__footer">
+            <button class="btn btn-primary">Create event</button>
+            <button class="btn btn-secondary" id="dismiss">Dismiss</button>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -196,6 +227,14 @@
 
   $('.sidebar__user').click(function () {
     $(this).toggleClass('active');
+  })
+
+  $('.modal__close').click(function () {
+    $('#modal').fadeOut(200);
+  })
+
+  $('#dismiss').click(function () {
+    $('#modal').fadeOut(200);
   })
 </script>
 

@@ -140,7 +140,8 @@ $(function(){
   // display current date
   var dateNow = calendar.getDate();
   calendar.option('select', function(startDate, endDate){
-    $('#modalCreateEvent').modal('show');
+    // $('#modalCreateEvent').modal('show');
+    $('#modal').fadeIn(200);
     $('#eventStartDate').val(startDate.format('LL'));
     $('#eventEndDate').val(endDate.format('LL'));
 

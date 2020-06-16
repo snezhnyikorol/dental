@@ -76,6 +76,45 @@ body {
     color: #109CF1;
 }
 
+
+
+.input-group textarea {
+    border: none;
+    border-bottom: 1px solid #D3D8DD;
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--table-black);
+    padding-bottom: 6px;
+}
+
+.input-group textarea::placeholder {
+    opacity: 0.5;
+    color: var(--table-black);
+}
+
+.input-group textarea {
+    font-family: 'Circe', serif;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D8DD;
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--table-black);
+    padding-bottom: 6px;
+}
+
+.input-group textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #818E9B;
+}
+
+.input-group textarea:focus ~ label {
+    color: #109CF1;
+}
+
+
+
+
 .btn:focus {
     outline: none;
 }
@@ -372,11 +411,16 @@ body {
     user-select: none;
 }
 
+.sidebar__item.active {
+    color: var(--accent-blue);
+}
+
 .sidebar__item-text {
     color: var(--dark-blue);
     margin-left: 16px;
     font-weight: 500;
     font-size: 13px;
+    text-decoration: none;
 }
 
 .active .sidebar__item-text {
