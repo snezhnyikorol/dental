@@ -887,6 +887,37 @@
     </div>
 </div>
 
+<div class="modal__container calendar__modal" id="modalCalendar">
+    <div class="modal__backdrop"></div>
+    <div class="modal__window">
+        <div class="modal__header">
+            <h3 class="modal__title">
+                Create New Event
+            </h3>
+            <div class="modal__close">
+                <i data-feather="x"></i>
+            </div>
+        </div>
+        <div class="modal__body">
+            <div class="input-group">
+                <input id="eventStartDate" type="text">
+                <label for="eventStartDate">START DATE</label>
+            </div>
+            <div class="input-group">
+                <input id="eventEndDate" type="text">
+                <label for="eventEndDate">END DATE</label>
+            </div>
+            <div class="input-group">
+                <textarea id="remarks" placeholder="Description (optional)"></textarea>
+            </div>
+        </div>
+        <div class="modal__footer">
+            <button class="btn btn-primary">Create event</button>
+            <button class="btn btn-secondary" id="dismiss">Dismiss</button>
+        </div>
+    </div>
+</div>
+
 <script src="./vendor/jquery/jquery.min.js"></script>
 <script src='./vendor/moment/moment.js'></script>
 <script src='./vendor/fullcalendar/fullcalendar.min.js'></script>

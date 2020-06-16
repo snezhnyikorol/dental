@@ -141,7 +141,7 @@ $(function(){
   var dateNow = calendar.getDate();
   calendar.option('select', function(startDate, endDate){
     // $('#modalCreateEvent').modal('show');
-    $('#modal').fadeIn(200);
+    $('#modalCalendar').fadeIn(200);
     $('#eventStartDate').val(startDate.format('LL'));
     $('#eventEndDate').val(endDate.format('LL'));
 
@@ -159,5 +159,14 @@ $(function(){
 
     $('#modalCreateEvent').modal('show');
   });
+
+
+  $('#modalCalendar .modal__close').click(function () {
+    $('#modalCalendar').fadeOut(200);
+  })
+
+  $('#dismiss').click(function () {
+    $('#modalCalendar').fadeOut(200);
+  })
 
 })

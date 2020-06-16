@@ -770,3 +770,73 @@ body {
 @media (max-width: 1199.98px) {
 
 }
+
+
+
+.modal__container {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 1000;
+}
+
+.modal__backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.modal__window {
+    position: relative;
+    z-index: 10;
+    margin: 100px auto;
+    width: 700px;
+    background: var(--white);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.modal__header {
+    padding: 20px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__body {
+    /*padding: 10px 20px 20px;*/
+}
+
+.modal__close {
+    cursor: pointer;
+}
+
+.accordion__header {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion__icon {
+    margin-left: 10px;
+    margin-bottom: -5px;
+    transition: all 200ms;
+}
+
+.accordion__icon svg {
+    height: 20px;
+}
+
+.accordion__container {
+    padding-bottom: 10px;
+    display: none;
+}

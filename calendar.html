@@ -173,36 +173,36 @@
     </main>
 </section>
 
-<div class="modal__container" id="modal">
-    <div class="modal__backdrop"></div>
-    <div class="modal__window">
-        <div class="modal__header">
-            <h3 class="modal__title">
-                Create New Event
-            </h3>
-            <div class="modal__close">
-                <i data-feather="x"></i>
+    <div class="modal__container calendar__modal" id="modalCalendar">
+        <div class="modal__backdrop"></div>
+        <div class="modal__window">
+            <div class="modal__header">
+                <h3 class="modal__title">
+                    Create New Event
+                </h3>
+                <div class="modal__close">
+                    <i data-feather="x"></i>
+                </div>
             </div>
-        </div>
-        <div class="modal__body">
-            <div class="input-group">
-                <input id="eventStartDate" type="text">
-                <label for="eventStartDate">START DATE</label>
+            <div class="modal__body">
+                <div class="input-group">
+                    <input id="eventStartDate" type="text">
+                    <label for="eventStartDate">START DATE</label>
+                </div>
+                <div class="input-group">
+                    <input id="eventEndDate" type="text">
+                    <label for="eventEndDate">END DATE</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="remarks" placeholder="Description (optional)"></textarea>
+                </div>
             </div>
-            <div class="input-group">
-                <input id="eventEndDate" type="text">
-                <label for="eventEndDate">END DATE</label>
+            <div class="modal__footer">
+                <button class="btn btn-primary">Create event</button>
+                <button class="btn btn-secondary" id="dismiss">Dismiss</button>
             </div>
-            <div class="input-group">
-                <textarea id="remarks" placeholder="Description (optional)"></textarea>
-            </div>
-        </div>
-        <div class="modal__footer">
-            <button class="btn btn-primary">Create event</button>
-            <button class="btn btn-secondary" id="dismiss">Dismiss</button>
         </div>
     </div>
-</div>
 
 
 
@@ -229,13 +229,10 @@
     $(this).toggleClass('active');
   })
 
-  $('.modal__close').click(function () {
+  $('#modal .modal__close').click(function () {
     $('#modal').fadeOut(200);
   })
 
-  $('#dismiss').click(function () {
-    $('#modal').fadeOut(200);
-  })
 </script>
 
 
