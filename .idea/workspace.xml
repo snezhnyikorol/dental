@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9326b500-cc30-40e6-a677-821d547b8684" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-patient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-self.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-self.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
-    </list>
+    <list default="true" id="9326b500-cc30-40e6-a677-821d547b8684" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +70,7 @@
       <workItem from="1591809614128" duration="6131000" />
       <workItem from="1591883557435" duration="632000" />
       <workItem from="1592039761187" duration="7388000" />
-      <workItem from="1592327152092" duration="13772000" />
+      <workItem from="1592327152092" duration="13841000" />
     </task>
     <servers />
   </component>
