@@ -2,65 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9326b500-cc30-40e6-a677-821d547b8684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/cassie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/dashboard-one.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/flot.sampledata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vmap.sampledata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/chart.js/Chart.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/chart.js/Chart.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/chart.js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/component.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/excanvas.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/flot.jquery.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.colorhelpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.crosshair.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.errorbars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.fillbetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.navigate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.pie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.resize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.selection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.stack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.symbol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.threshold.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.flot.time.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jquery.flot/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/jquery.vmap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/jqvmap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/continents/jquery.vmap.africa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/continents/jquery.vmap.asia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/continents/jquery.vmap.australia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/continents/jquery.vmap.europe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.algeria.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.argentina.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.brazil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.canada.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.europe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.france.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.germany.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.greece.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.iran.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.iraq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.russia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.tunisia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.turkey.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.usa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/jqvmap/maps/jquery.vmap.world.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patients.html" beforeDir="false" afterPath="$PROJECT_DIR$/patients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-patient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-self.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-self.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +85,7 @@
       <workItem from="1592039761187" duration="7388000" />
       <workItem from="1592327152092" duration="13841000" />
       <workItem from="1592379863434" duration="539000" />
-      <workItem from="1593105546446" duration="9224000" />
+      <workItem from="1593105546446" duration="10153000" />
     </task>
     <servers />
   </component>
