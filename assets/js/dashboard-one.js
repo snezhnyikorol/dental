@@ -99,7 +99,7 @@ $(function(){
             beginAtZero:true,
             fontSize: 13,
             fontColor: '#182b49',
-            fontFamily: 'Roboto'
+            fontFamily: 'Circe, serif'
           }
         }],
         xAxes: [{
