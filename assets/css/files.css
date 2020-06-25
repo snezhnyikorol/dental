@@ -1,0 +1,90 @@
+.content-header {
+    display: flex;
+    margin: 0 -15px 30px;
+}
+
+.card {
+    margin: 0 15px;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+h6, .h6 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.card h2 {
+    color: #bdbdbd;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card h2 .info {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.progress {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    background: #f7f7f7;
+    height: auto;
+    overflow: visible;
+    font-size: .75rem;
+}
+
+.progress .progress-bar {
+    -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+    background-color: #46b6fe;
+    line-height: 8px;
+    height: 8px;
+}
+
+.l-green {
+    background: linear-gradient(0deg, #04BE5B, rgba(4,190,91,0.7)) !important;
+    color: #fff !important;
+}
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width .6s ease;
+}
+
+.l-blush {
+    background: linear-gradient(0deg, #e47297, rgba(228,114,151,0.7)) !important;
+    color: #fff !important;
+}
+
+.l-blue {
+    background: linear-gradient(0deg, #46b6fe, rgba(70,182,254,0.7)) !important;
+    color: #fff !important;
+}
+
+.l-purple {
+    background: linear-gradient(0deg, #6f42c1, rgba(111,66,193,0.7)) !important;
+    color: #fff !important;
+}
+
+td svg {
+    margin-bottom: -7px;
+    margin-right: 10px;
+    color: #C2CFE0;
+}

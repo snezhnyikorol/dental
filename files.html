@@ -5,11 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+
+<!--    <link rel="stylesheet" href="./assets/css/cassie.css">-->
     <link href="./vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/mail.css">
+    <link rel="stylesheet" href="./assets/css/files.css">
 
     <link href='./vendor/fullcalendar/fullcalendar.min.css' rel='stylesheet'>
+    <link href='./vendor/jqvmap/jqvmap.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/calendar.css">
     <title>Dental CRM</title>
 </head>
@@ -54,7 +58,7 @@
                 <i data-feather="calendar"></i>
                 <a href="./chat.html" class="sidebar__item-text">Чат</a>
             </div>
-            <div class="sidebar__item active">
+            <div class="sidebar__item">
                 <i data-feather="inbox"></i>
                 <a href="./mail.html" class="sidebar__item-text">
                     Mail
@@ -78,7 +82,7 @@
                 <i data-feather="user"></i>
                 <a href="./patients.html" class="sidebar__item-text">Пациенты</a>
             </div>
-            <div class="sidebar__item ">
+            <div class="sidebar__item active">
                 <i data-feather="folder"></i>
                 <a href="./files.html" class="sidebar__item-text">Файлы</a>
             </div>
@@ -154,284 +158,118 @@
 
     <main class="content-wrapper">
         <div class="content profile-content">
-            <div class="profile__sidebar">
-                <button class="btn btn-primary">
-                    Compose
-                </button>
-                <div>
-                    <nav class="nav nav-classic top-nav">
-                        <a href="" class="nav-link active">
-                            <i data-feather="inbox"></i>
-                            <span>Inbox</span>
-                            <span class="badge">20</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="monitor"></i>
-                            <span>Starred</span>
-                            <span class="badge">3</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="clock"></i>
-                            <span>Important</span>
-                            <span class="badge">10</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="star"></i>
-                            <span>Sent Mail</span>
-                            <span class="badge">8</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="file"></i>
-                            <span>Drafts</span>
-                            <span class="badge">15</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="slash"></i>
-                            <span>Spam</span>
-                            <span class="badge">128</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="trash"></i>
-                            <span>Trash</span>
-                            <span class="badge">6</span>
-                        </a>
-                    </nav>
-
-                    <label class="mail__label">label</label>
-                    <nav class="nav nav-classic">
-                        <a href="" class="nav-link">
-                            <i data-feather="folder"></i>
-                            <span>Social</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="folder"></i>
-                            <span>Promotions</span>
-                        </a>
-                        <a href="" class="nav-link">
-                            <i data-feather="folder"></i>
-                            <span>Updates</span>
-                        </a>
-                    </nav>
-
-                </div>
-            </div>
-
-            <div class="chat__body">
-                <div class="mail-body-header">
-                    <h5>Inbox <span class="d-none d-lg-inline">6 unread messages</span></h5>
-                    <div>
-                        <span class="text-muted tx-13 mg-r-10 d-none d-lg-inline">1-30 of 157</span>
-                        <button class="btn btn-secondary" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-                        <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
-                        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></button>
+            <div class="content-header">
+                <div class="card">
+                    <div class="body big_icon storage">
+                        <h6>Storage</h6>
+                        <h2>32GB <small class="info">of 1Tb</small></h2>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar l-green" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="mail-body-content">
-                    <div class="mail-navbar">
-                        <div class="d-flex align-items-center">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="tx-14 tx-color-04 mg-lg-l-15">
-                                <span>Sort by:</span>
-                                <a href="" class="link-01">Newest</a>
-                            </div>
+                <div class="card">
+                    <div class="body big_icon storage">
+                        <h6>Documents</h6>
+                        <h2>2GB <small class="info">of 1Tb</small></h2>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar l-blush" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;"></div>
                         </div>
-                        <div class="d-none d-lg-flex">
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-cw"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line></svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></a>
-                        </div>
-                    </div><!-- mail-navbar -->
-                    <ul class="mail-list ps ps--active-y">
-                        <li class="mail-item unread">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Molly Manson</span>
-                                    <span>11:15am</span>
-                                </div>
-                                <h6>Simple And Best Responsive Web Design Using CSS</h6>
-                                <p>Responsive Web Design is a great practise to build a website that looks and works similar in almost...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item unread">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-primary">d</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Diana Zubiri</span>
-                                    <span>10:30am</span>
-                                </div>
-                                <h6>HTML Interview Questions and Answers</h6>
-                                <p>Hi, There are some common questions asked by every interviewer, so here we have collected few questions...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-teal">a</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Alex Blake</span>
-                                    <span>08:40am</span>
-                                </div>
-                                <h6>Upload an image and make an image gallery</h6>
-                                <p>Here is the overview what we are going to do. Hey friends today we will learn how to upload an image in...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Socrates Itumay</span>
-                                    <span>Yesterday</span>
-                                </div>
-                                <h6>Scaling a webdesign support team</h6>
-                                <p>The evolution in educative methodologies has transformed the entire concept of training...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-pink">j</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Jill Kassidy</span>
-                                    <span>Yesterday</span>
-                                </div>
-                                <h6>Simple responsive menu using css3</h6>
-                                <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item unread">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-ui-03 tx-color-02">a</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Alexis Scott</span>
-                                    <span>Jul 10</span>
-                                </div>
-                                <h6>Web security testing: how to see the hidden form fields</h6>
-                                <p>In this message you will learn how to see the hidden form fields in web page with help of WebScarab tool....</p>
-                            </div>
-                        </li>
-                        <li class="mail-item">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-success">r</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Reynante Labares</span>
-                                    <span>Jul 10</span>
-                                </div>
-                                <h6>HTML interview questions and answers</h6>
-                                <p>In this message you will learn how to see the hidden form fields in web page with help of WebScarab tool....</p>
-                            </div>
-                        </li>
-                        <li class="mail-item">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-purple">a</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Alexa Grace</span>
-                                    <span>Jul 09</span>
-                                </div>
-                                <h6>Upload an image and make an image gallery</h6>
-                                <p>Here is the overview what we are going to do. Hey friends today we will learn how to upload an image in...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item unread">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-pink">j</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Jill Kassidy</span>
-                                    <span>Jul 08</span>
-                                </div>
-                                <h6>Simple responsive menu using css3</h6>
-                                <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item unread">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Lea Grace</span>
-                                    <span>Jul 05</span>
-                                </div>
-                                <h6>Simple and best responsive web design using css</h6>
-                                <p>Responsive Web Design is a great practise to build a website that looks and works similar in almost...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-indigo">j</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Julia Montes</span>
-                                    <span>Jul 02</span>
-                                </div>
-                                <h6>Simple responsive menu using css3</h6>
-                                <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
-                            </div>
-                        </li>
-                        <li class="mail-item unread">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-checkbox__input" id="1">
-                                <label for="1" class="custom-checkbox__label"></label>
-                            </div>
-                            <div class="avatar"><span class="avatar-initial rounded-circle bg-teal">h</span></div>
-                            <div class="mail-item-body">
-                                <div>
-                                    <span>Helder Owen</span>
-                                    <span>Jul 02</span>
-                                </div>
-                                <h6>Upload an image and make an image gallery</h6>
-                                <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
-
+                <div class="card">
+                    <div class="body big_icon storage">
+                        <h6>Images</h6>
+                        <h2>20GB <small class="info">of 1Tb</small></h2>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar l-blue" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="body big_icon storage">
+                        <h6>Media</h6>
+                        <h2>310GB <small class="info">of 1Tb</small></h2>
+                        <div class="progress m-t-10">
+                            <div class="progress-bar l-purple" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" style="width: 39%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="report-wrapper">
+                    <table class="report">
+                        <thead class="report__header">
+                            <tr>
+                                <th><span class="report__header-text">Name</span></th>
+                                <th><span class="report__header-text">Owner</span></th>
+                                <th><span class="report__header-text">Last Modified</span></th>
+                                <th><span class="report__header-text">File size</span></th>
+                            </tr>
+                        </thead>
+                        <tbody class="report__body">
+                        <tr>
+                            <td><i data-feather="folder"></i>WordPress | Codester</td>
+                            <td>Me</td>
+                            <td>Dec 19, 2016</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="folder"></i>VueJs Projects for client</td>
+                            <td>Me</td>
+                            <td>Apr 22, 2018</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="folder"></i>Sample Website proposals</td>
+                            <td>Me</td>
+                            <td>Apr 09, 2019</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="folder"></i>My Projects</td>
+                            <td>Me</td>
+                            <td>Mar 26, 2019</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="folder"></i>Dribbble | Website</td>
+                            <td>Me</td>
+                            <td>Aug 13, 2018</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="folder"></i>Angular Website proposals</td>
+                            <td>Me</td>
+                            <td>Feb 11, 2018</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="file-text"></i>Document of Understanding</td>
+                            <td>Me</td>
+                            <td>Apr 26, 2018</td>
+                            <td>67Kb</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="file-text"></i>Document of Understanding</td>
+                            <td>Me</td>
+                            <td>Apr 26, 2018</td>
+                            <td>15KB</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="image"></i>asdf hhkj.jpg</td>
+                            <td>Me</td>
+                            <td>Apr 26, 2018</td>
+                            <td>1MB</td>
+                        </tr>
+                        <tr>
+                            <td><i data-feather="image"></i>asdf hhkj.jpg</td>
+                            <td>Me</td>
+                            <td>Sept 14, 2018</td>
+                            <td>1MB</td>
+                        </tr>
+                        </tbody>
+                    </table>
             </div>
         </div>
     </main>
@@ -625,6 +463,20 @@
 <script src='./assets/js/calendar-events.js'></script>
 <script src="./vendor/select2/js/select2.full.min.js"></script>
 <script src="./vendor/feather-icons/feather.min.js"></script>
+
+<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+<script src="./vendor/jquery.flot/jquery.flot.js"></script>
+<script src="./vendor/jquery.flot/jquery.flot.resize.js"></script>
+<script src="./vendor/jquery.flot/jquery.flot.stack.js"></script>
+<script src="./vendor/jquery.flot/jquery.flot.threshold.js"></script>
+<script src="./vendor/jqvmap/jquery.vmap.min.js"></script>
+<script src="./vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+
+<script src='./assets/js/dashboard.js'></script>
+<script src='./assets/js/dashboard-one.js'></script>
+<script src='./assets/js/flot.sampledata.js'></script>
+<script src='./assets/js/vmap.sampledata.js'></script>
+
 
 <script>
   feather.replace();
