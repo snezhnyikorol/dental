@@ -4,8 +4,6 @@
     <list default="true" id="9326b500-cc30-40e6-a677-821d547b8684" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/cassie.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/cassie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/dashboard-one.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/dashboard-one.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,8 @@
       <workItem from="1592039761187" duration="7388000" />
       <workItem from="1592327152092" duration="13841000" />
       <workItem from="1592379863434" duration="539000" />
-      <workItem from="1593105546446" duration="13073000" />
+      <workItem from="1593105546446" duration="13248000" />
+      <workItem from="1593124260304" duration="182000" />
     </task>
     <servers />
   </component>

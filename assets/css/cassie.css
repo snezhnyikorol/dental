@@ -11602,27 +11602,27 @@ body {
   letter-spacing: .3px;
   color: #373857; }
 
-.header {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  border-bottom: 1px solid rgba(230, 231, 239, 0.85);
-  transition: all 0.25s; }
-  @media (prefers-reduced-motion: reduce) {
-    .header {
-      transition: none; } }
-  @media (min-width: 576px) {
-    .header {
-      height: 70px; } }
-  @media (min-width: 992px) {
-    .header {
-      height: 80px;
-      left: 231px; } }
-  @media (min-width: 1200px) {
-    .header {
-      left: 240px; } }
+/*.header {*/
+/*  height: 60px;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: space-between;*/
+/*  background-color: #fff;*/
+/*  border-bottom: 1px solid rgba(230, 231, 239, 0.85);*/
+/*  transition: all 0.25s; }*/
+  /*@media (prefers-reduced-motion: reduce) {*/
+  /*  .header {*/
+  /*    transition: none; } }*/
+  /*@media (min-width: 576px) {*/
+  /*  .header {*/
+  /*    height: 70px; } }*/
+  /*@media (min-width: 992px) {*/
+  /*  .header {*/
+  /*    height: 80px;*/
+  /*    left: 231px; } }*/
+  /*@media (min-width: 1200px) {*/
+  /*  .header {*/
+  /*    left: 240px; } }*/
 
 .header-left {
   display: flex;
